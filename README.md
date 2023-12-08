@@ -9,8 +9,17 @@
 
 ## :dart: About ##
 
-This is my submission for the PacerPro coding test. I have used Ruby on Rails to create a simple API that allows a user to create a model, soft delete it and view all models. I have also included a default scope that only returns models that have not been soft deleted. I have also included a test suite that tests the model creation, soft delete and default scope.
+This is my submission for the PacerPro coding test. I have used Ruby on Rails to create a simple API that allows a user to create a model, soft delete it and view all models. I have also included a default scope that only returns models that have not been soft deleted. I have also included a test suite that tests the model creation, soft delete and default scope. 
 
+Utilized a default scope within the Item model to exclude soft-deleted items from default queries. This ensures that only active items are fetched during standard data retrieval operations.
+
+### Test Suite Details
+
+The RSpec test suite verifies the functionality of the soft delete implementation:
+
+1. 2. Soft Deletion Testing: Checks the ability to perform soft deletions on items, verifying the presence of the deleted_at timestamp.
+Restoration Testing: Validates the restoration of soft-deleted items, ensuring the removal of the deleted_at timestamp.
+3. Query Filtering Testing: Verifies the exclusion of soft-deleted items from standard queries, ensuring that only active items are retrieved.
 ## :sparkles: Features ##
 
 :heavy_check_mark: Model Creation\
