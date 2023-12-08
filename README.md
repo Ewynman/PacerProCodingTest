@@ -17,8 +17,8 @@ Utilized a default scope within the Item model to exclude soft-deleted items fro
 
 The RSpec test suite verifies the functionality of the soft delete implementation:
 
-1. 2. Soft Deletion Testing: Checks the ability to perform soft deletions on items, verifying the presence of the deleted_at timestamp.
-Restoration Testing: Validates the restoration of soft-deleted items, ensuring the removal of the deleted_at timestamp.
+1. Soft Deletion Testing: Checks the ability to perform soft deletions on items, verifying the presence of the deleted_at timestamp.
+2. Restoration Testing: Validates the restoration of soft-deleted items, ensuring the removal of the deleted_at timestamp.
 3. Query Filtering Testing: Verifies the exclusion of soft-deleted items from standard queries, ensuring that only active items are retrieved.
 ## :sparkles: Features ##
 
